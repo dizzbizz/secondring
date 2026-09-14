@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0e1418">
-<title>Second Ring — you can't answer the phone from under a furnace</title>
-<meta name="description" content="Missed-call text-back for HVAC and plumbing shops in Sherwood Park, Strathcona County and Fort Saskatchewan. If you can't get to the phone, your customer still hears from you within two seconds.">
+<title>Second Ring — the job doesn't stop so you can answer the phone</title>
+<meta name="description" content="Missed-call text-back for trades and sole proprietors around Edmonton. If you can't get to the phone, your customer still hears from you in under two seconds. First five customers, $99/month locked in.">
 <meta property="og:title" content="Second Ring">
-<meta property="og:description" content="Missed-call text-back for trades in Strathcona County. Two weeks free.">
+<meta property="og:description" content="Missed-call text-back for Edmonton-area trades. First five customers pay $99/month for good.">
 <meta property="og:type" content="website">
 
 <!-- ══════════════════════════════════════════════════════════
-     EDIT BEFORE GOING LIVE — search the file for: CHANGE
+     EDIT BEFORE GOING LIVE — search for: CHANGE
        1. Phone number (5 places)
        2. Your first name
        3. Delete the testimonial section until it's real
@@ -35,7 +35,7 @@ body{margin:0;background:var(--ground);color:var(--ink);
 .wrap{max-width:660px;margin:0 auto;padding:0 20px}
 section{padding:46px 0;border-bottom:1px solid var(--rule)}
 h1,h2,h3,.kick,.big{font-family:var(--cond);letter-spacing:.01em}
-h1{font-size:clamp(38px,8.6vw,60px);font-weight:700;line-height:1.02;margin:0 0 18px}
+h1{font-size:clamp(36px,8.2vw,58px);font-weight:700;line-height:1.03;margin:0 0 18px}
 h2{font-size:clamp(26px,6vw,34px);font-weight:600;margin:0 0 14px;line-height:1.12}
 .kick{font-size:13px;letter-spacing:.13em;text-transform:uppercase;
   color:var(--amber);font-weight:600;margin:0 0 10px}
@@ -50,7 +50,13 @@ header{padding:22px 0 0}
   box-shadow:0 0 0 4px rgba(242,163,60,.15)}
 
 .hero{padding:36px 0 46px;border-bottom:1px solid var(--rule)}
-.hero .lead{max-width:31ch;color:var(--ink)}
+.hero .lead{max-width:32ch;color:var(--ink)}
+
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin:22px 0 10px}
+.chips span{font-family:var(--cond);font-size:14px;letter-spacing:.05em;
+  color:var(--muted);border:1px solid var(--rule);padding:4px 11px;border-radius:2px}
+.chips span.more{color:var(--amber);border-color:rgba(242,163,60,.4)}
+.chipnote{font-size:15px;color:var(--muted);margin:0}
 
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
 .btn{display:inline-block;font-family:var(--cond);font-size:19px;font-weight:700;
@@ -60,7 +66,6 @@ header{padding:22px 0 0}
 .btn.s{background:transparent;color:var(--ink);border:1px solid var(--rule)}
 .btn:focus-visible{outline:3px solid var(--green);outline-offset:2px}
 
-/* ─── in-page demo ─── */
 .demo{background:var(--panel);border:1px solid var(--rule);padding:22px}
 .demo label{display:block;font-family:var(--cond);font-size:13px;
   letter-spacing:.06em;color:var(--muted);margin:0 0 6px}
@@ -94,7 +99,6 @@ header{padding:22px 0 0}
 .bub .f{font-family:var(--cond);font-size:12px;letter-spacing:.06em;color:var(--green);margin-bottom:5px}
 .bub .t{font-family:var(--cond);font-size:12px;color:var(--muted);margin-top:8px;letter-spacing:.04em}
 
-/* ─── calculator ─── */
 .calc{background:var(--panel);border:1px solid var(--rule);padding:22px}
 .f{margin-bottom:18px}
 .f label{display:flex;justify-content:space-between;align-items:baseline;
@@ -112,7 +116,6 @@ input[type=range]:focus-visible{outline:2px solid var(--green);outline-offset:6p
   line-height:1;font-variant-numeric:tabular-nums}
 .out .cap{color:var(--muted);font-size:15px;margin-top:6px}
 
-/* ─── steps ─── */
 ol.steps{list-style:none;counter-reset:s;padding:0;margin:0}
 ol.steps li{counter-increment:s;position:relative;padding:0 0 22px 50px}
 ol.steps li::before{content:counter(s);position:absolute;left:0;top:-2px;width:32px;height:32px;
@@ -121,16 +124,18 @@ ol.steps li::before{content:counter(s);position:absolute;left:0;top:-2px;width:3
 ol.steps b{display:block;font-family:var(--cond);font-size:20px;font-weight:600}
 ol.steps p{margin:0;color:var(--muted);font-size:16px}
 
-/* ─── price ─── */
 .price{background:var(--panel);border:1px solid var(--rule);padding:26px 24px}
-.price .big{font-size:46px;font-weight:700;line-height:1}
+.price .tag{font-family:var(--cond);font-size:13px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:8px}
+.price .big{font-size:50px;font-weight:700;line-height:1;color:var(--amber)}
 .price .per{font-family:var(--cond);font-size:19px;color:var(--muted);margin-left:5px}
+.price .then{font-family:var(--cond);font-size:17px;color:var(--muted);
+  margin-top:9px;letter-spacing:.03em}
 .price ul{list-style:none;padding:0;margin:20px 0 0}
 .price li{padding:10px 0 10px 26px;position:relative;border-top:1px solid var(--rule);font-size:16px}
 .price li::before{content:"";position:absolute;left:4px;top:18px;width:8px;height:8px;
   border-radius:50%;background:var(--green)}
 
-/* ─── fit ─── */
 .fit{display:grid;gap:14px}
 @media(min-width:560px){.fit{grid-template-columns:1fr 1fr}}
 .fit div{background:var(--panel2);padding:18px 20px;border-top:2px solid var(--green)}
@@ -160,24 +165,32 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px}
 <header><div class="brand"><i></i>SECOND RING</div></header>
 
 <section class="hero">
-  <p class="kick">Sherwood Park · Strathcona County · Fort Saskatchewan</p>
-  <h1>You can&rsquo;t answer the phone from under a furnace.</h1>
-  <p class="lead">So we answer it for you &mdash; with a text, in under two seconds, from your shop.
-    He stops looking for the next guy.</p>
+  <p class="kick">Edmonton · Sherwood Park · St. Albert · Fort Saskatchewan</p>
+  <h1>The job doesn&rsquo;t stop so you can answer the phone.</h1>
+  <p class="lead">So we answer it for you &mdash; with a text, in under two seconds, from your
+    business. He stops looking for the next guy.</p>
+  <div class="chips">
+    <span>Plumbing</span><span>Electrical</span><span>HVAC</span><span>Pest control</span>
+    <span>Landscaping</span><span>Lawn care</span><span>Roofing</span><span>Concrete</span>
+    <span>Painting</span><span>Handyman</span><span>Mobile mechanic</span><span>Cleaning</span>
+    <span>Snow removal</span><span class="more">&amp; plenty more</span>
+  </div>
+  <p class="chipnote">Those are just examples. It&rsquo;s a phone line &mdash; it works the same
+    for any business where the phone rings while your hands are full.</p>
   <div class="cta">
     <!-- CHANGE phone -->
-    <a class="btn p" href="tel:+17809661822">Call or text 780-966-1822</a>
+    <a class="btn p" href="tel:+17805550190">Call or text 780-555-0190</a>
     <a class="btn s" href="#try">See it work</a>
   </div>
 </section>
 
 <section id="try">
   <p class="kick">Try it</p>
-  <h2>Put your shop name in and hit the button.</h2>
+  <h2>Put your business name in and hit the button.</h2>
   <p class="muted">This is exactly what your customer gets when nobody picks up.</p>
   <div class="demo">
-    <label for="biz">Your shop name</label>
-    <input type="text" id="biz" value="Ardrossan Heating &amp; Air" autocomplete="off" spellcheck="false">
+    <label for="biz">Your business name</label>
+    <input type="text" id="biz" value="Dave&rsquo;s Plumbing" autocomplete="off" spellcheck="false">
     <div class="screen" id="scr" data-s="idle">
       <span class="stamp" id="stamp">MISSED</span>
       <div class="sk" id="sk">No activity</div>
@@ -185,28 +198,29 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px}
       <div class="sb" id="sb">Press the button below</div>
     </div>
     <div id="thread"></div>
-    <button class="btn p" id="go" style="width:100%;margin-top:16px">Call the shop</button>
+    <button class="btn p" id="go" style="width:100%;margin-top:16px">Call the business</button>
   </div>
 </section>
 
 <section>
   <p class="kick">The problem</p>
   <h2>Only about 1 in 5 callers leaves a voicemail.</h2>
-  <p>The rest just call the next shop on the list. You see the missed call an hour later,
-    you ring him back, and he&rsquo;s already booked somebody else.</p>
+  <p>The rest just call the next one on the list. Doesn&rsquo;t matter whether you&rsquo;re under
+    a sink, up a ladder, on a mower or in a crawlspace &mdash; you see the missed call an hour
+    later, you ring back, and he&rsquo;s already booked somebody else.</p>
   <p class="muted">Move the sliders to your own numbers.</p>
 
   <div class="calc">
     <div class="f">
-      <label for="c1">Calls you get a month <span id="v1">120</span></label>
-      <input type="range" id="c1" min="20" max="400" step="10" value="120">
+      <label for="c1">Calls you get a month <span id="v1">100</span></label>
+      <input type="range" id="c1" min="20" max="400" step="10" value="100">
     </div>
     <div class="f">
-      <label for="c2">Average job <span id="v2">$450</span></label>
-      <input type="range" id="c2" min="100" max="3000" step="50" value="450">
+      <label for="c2">Average job <span id="v2">$400</span></label>
+      <input type="range" id="c2" min="100" max="5000" step="50" value="400">
     </div>
     <div class="out">
-      <div class="big" id="loss">$58,320</div>
+      <div class="big" id="loss">$43,200</div>
       <div class="cap">walking out the door every year, at a 30% miss rate</div>
     </div>
   </div>
@@ -221,7 +235,7 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px}
     <li><b>If you get to it, that&rsquo;s the end of it</b>
       <p>Answer the call and nothing else happens. It only kicks in when nobody picks up.</p></li>
     <li><b>If you don&rsquo;t, he gets a text</b>
-      <p>Under two seconds, with your shop&rsquo;s name on it. He replies, it lands on your phone
+      <p>Under two seconds, with your business name on it. He replies, it lands on your phone
         like a normal text.</p></li>
     <li><b>You get a report on the 1st</b>
       <p>How many calls it caught, how many wrote back. Real numbers, every month.</p></li>
@@ -231,15 +245,19 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px}
 <section>
   <p class="kick">What it costs</p>
   <div class="price">
-    <span class="big">$397</span><span class="per">/ month</span>
+    <div class="tag">First five customers</div>
+    <span class="big">$99</span><span class="per">/ month</span>
+    <div class="then">&mdash; and you keep that rate for as long as you stay.
+      Everyone after the first five is $297/month.</div>
     <ul>
-      <li>Two weeks free first &mdash; no card, no commitment</li>
+      <li>Two weeks free before you pay anything</li>
       <li>Month to month. Cancel and I unhook it the same day</li>
       <li>Setup, tuning and monthly reporting included</li>
       <li>You keep your own number. Always</li>
     </ul>
   </div>
-  <p class="muted" style="margin-top:18px">One furnace call covers it for the year.</p>
+  <p class="muted" style="margin-top:18px">I&rsquo;m taking five at this rate because I want five
+    people who&rsquo;ll tell me honestly whether it works. One job covers the year either way.</p>
 </section>
 
 <section>
@@ -247,9 +265,9 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px}
   <h2>This isn&rsquo;t for everybody.</h2>
   <div class="fit">
     <div><h3>Worth it if</h3><ul>
-      <li>You&rsquo;re running one to five trucks</li>
+      <li>You&rsquo;re on your own or running a couple of trucks</li>
       <li>You&rsquo;re on the tools yourself most days</li>
-      <li>Nobody&rsquo;s on the phone evenings or Saturdays</li>
+      <li>Nobody&rsquo;s on the phone evenings or weekends</li>
       <li>A typical job is worth a few hundred or more</li>
     </ul></div>
     <div class="no"><h3>Not worth it if</h3><ul>
@@ -264,19 +282,29 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px}
 </section>
 
 <!-- CHANGE — delete this entire section until a real client gives you a real quote.
-     Do not invent one. Somebody will ask which shop. -->
+     Do not invent one. Somebody will ask which business. -->
 <section>
-  <p class="kick">From a shop down the road</p>
+  <p class="kick">From a customer</p>
   <blockquote>Nineteen calls in two weeks I never would have known about. Six texted back.
-    Two turned into jobs.<cite>&mdash; Owner, HVAC shop, Fort Saskatchewan</cite></blockquote>
+    Two turned into jobs.<cite>&mdash; Sole proprietor, Edmonton area</cite></blockquote>
+</section>
+
+<section>
+  <p class="kick">Where</p>
+  <h2>Edmonton and everything around it.</h2>
+  <p>Sherwood Park, Strathcona County, St. Albert, Fort Saskatchewan, Spruce Grove, Stony Plain,
+    Leduc, Beaumont, Devon, Ardrossan, Gibbons, Morinville &mdash; and Edmonton itself.</p>
+  <p class="muted">Setup takes about twenty minutes and I&rsquo;d rather do it in person. If
+    you&rsquo;re a bit further out, call me anyway and we&rsquo;ll sort it over the phone.</p>
 </section>
 
 <section>
   <p class="kick">Who you&rsquo;re dealing with</p>
-  <h2>One guy, twenty minutes away.</h2>
+  <h2>One guy, not an agency.</h2>
   <!-- CHANGE name -->
-  <p>I&rsquo;m Kevin. I live in Sherwood Park and I set these up for HVAC and plumbing shops around
-    the county. Not an agency, not a call centre, no contract with teeth in it.</p>
+  <p>I&rsquo;m Ryan. I&rsquo;m based in Sherwood Park and I set these up for tradespeople and
+    sole proprietors around Edmonton. No call centre, no contract with teeth in it, no account
+    manager you&rsquo;ve never met.</p>
   <p class="muted">If it breaks, you call me and I fix it. If it&rsquo;s not working for you,
     you call me and I take it off.</p>
 </section>
@@ -286,7 +314,7 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px}
   <h2 style="margin-bottom:6px">Find out what you&rsquo;re missing.</h2>
   <p class="muted">About twenty minutes to set up.</p>
   <!-- CHANGE phone (3 below) -->
-  <a class="tel" href="tel:+17809661822">780-966-1822</a>
+  <a class="tel" href="tel:+17805550190">780-555-0190</a>
   <div class="cta" style="justify-content:center">
     <a class="btn p" href="sms:+17805550190">Text me</a>
     <a class="btn s" href="tel:+17805550190">Call me</a>
@@ -295,14 +323,13 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px}
 
 <footer>
   Second Ring · Sherwood Park, Alberta<br>
-  Serving Strathcona County, Fort Saskatchewan, Ardrossan and east Edmonton.
+  Missed-call text-back for trades and sole proprietors around Edmonton.
 </footer>
 
 </div>
 
 <script>
 (function(){
-  /* ---- demo ---- */
   var scr=document.getElementById('scr'),stamp=document.getElementById('stamp'),
       sk=document.getElementById('sk'),sn=document.getElementById('sn'),
       sb=document.getElementById('sb'),th=document.getElementById('thread'),
@@ -323,7 +350,7 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px}
     t.push(setTimeout(function(){
       scr.dataset.s='miss';stamp.classList.add('on');
       sk.textContent='No answer after 4 rings';
-      sb.textContent='You\u2019re under a furnace. This one was gone.';
+      sb.textContent='Hands full. This one was gone.';
     },4400));
 
     t.push(setTimeout(function(){
@@ -338,7 +365,6 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px}
     },5900));
   });
 
-  /* ---- calculator ---- */
   var c1=document.getElementById('c1'),c2=document.getElementById('c2'),
       v1=document.getElementById('v1'),v2=document.getElementById('v2'),
       loss=document.getElementById('loss');
