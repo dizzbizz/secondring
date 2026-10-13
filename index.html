@@ -4,77 +4,92 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0e1418">
-<title>Second Ring — stop losing the calls you miss</title>
-<meta name="description" content="Two ways to stop losing jobs to missed calls. A text back in your own words for $69.99/month, or a receptionist that answers and books for $99.99/month. Set up in person around Edmonton.">
+<title>Second Ring — never lose another missed call</title>
+<meta name="description" content="When you can't get to the phone, your customer gets a text from you in under two seconds — in your own words. Set up in person by a local guy around Edmonton. $69.99/month.">
 <meta property="og:title" content="Second Ring">
-<meta property="og:description" content="Text them back, or have someone answer and book it. Set up by a local guy around Edmonton.">
+<meta property="og:description" content="Miss the call, keep the job. A text goes out in under two seconds, in your words. Edmonton area.">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="en_CA">
+<link rel="canonical" href="https://secondringcalls.ca/">
+
+<!-- browser tab icon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312181d'/%3E%3Ccircle cx='32' cy='32' r='6.7' fill='%23eaeeea'/%3E%3Cpath d='M44.85 17.73A19.2 19.2 0 1 1 26.07 13.74' fill='none' stroke='%23f2a33c' stroke-width='6.1'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <!-- ══════════════════════════════════════════════════════════
-     EDIT BEFORE GOING LIVE — search for: CHANGE
-       1. Phone number (5 places)
-       2. Your first name
+     EDIT BEFORE GOING LIVE — search this file for:  CHANGE
+       1. Phone number — 6 places
+       2. Your first name — 1 place
        3. Delete the testimonial section until it's real
      ══════════════════════════════════════════════════════════ -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
 :root{
   --ground:#0e1418; --panel:#171f26; --panel2:#1f2932;
   --rule:#2a343d; --ink:#eaeeea; --muted:#8a939b;
   --amber:#f2a33c; --green:#4fb477; --red:#d6453d;
-  --cond:'Barlow Condensed',Arial Narrow,sans-serif;
-  --body:'Barlow',-apple-system,Segoe UI,Roboto,sans-serif;
+  --cond:'Barlow Condensed','Arial Narrow',Arial,sans-serif;
+  --body:'Barlow',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--ground);color:var(--ink);
   font:17px/1.62 var(--body);-webkit-font-smoothing:antialiased}
 .wrap{max-width:660px;margin:0 auto;padding:0 20px}
-section{padding:46px 0;border-bottom:1px solid var(--rule)}
+section{padding:48px 0;border-bottom:1px solid var(--rule)}
 h1,h2,h3,.kick,.big{font-family:var(--cond);letter-spacing:.01em}
-h1{font-size:clamp(36px,8.2vw,58px);font-weight:700;line-height:1.03;margin:0 0 18px}
+h1{font-size:clamp(36px,8.4vw,58px);font-weight:700;line-height:1.02;margin:0 0 18px}
 h2{font-size:clamp(26px,6vw,34px);font-weight:600;margin:0 0 14px;line-height:1.12}
-.kick{font-size:13px;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--amber);font-weight:600;margin:0 0 10px}
 p{margin:0 0 16px}.lead{font-size:19px}.muted{color:var(--muted)}
 a{color:var(--amber)}
-.opt{font-family:var(--cond);font-size:13px;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--green);font-weight:600;margin:0 0 10px}
+.kick{font-size:13px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--amber);font-weight:600;margin:0 0 10px}
 
-header{padding:22px 0 0}
-.brand{display:flex;align-items:center;gap:10px;font-family:var(--cond);
-  font-size:22px;font-weight:700;letter-spacing:.03em}
-.brand i{width:11px;height:11px;border-radius:50%;background:var(--amber);
-  box-shadow:0 0 0 4px rgba(242,163,60,.15)}
+/* ── header / logo ── */
+header{padding:24px 0 0;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
+.logo svg{width:38px;height:38px;flex:0 0 38px;display:block}
+.logo .wm{font-family:var(--cond);font-size:23px;font-weight:700;letter-spacing:.055em;line-height:1}
+.logo .wm small{display:block;font-size:11px;font-weight:600;letter-spacing:.17em;
+  color:var(--muted);margin-top:2px}
+header .hcall{font-family:var(--cond);font-size:16px;letter-spacing:.05em;
+  color:var(--muted);text-decoration:none;white-space:nowrap}
+header .hcall:hover{color:var(--ink)}
+@media(max-width:430px){header .hcall{display:none}}
 
-.hero{padding:36px 0 46px;border-bottom:1px solid var(--rule)}
+/* ── hero ── */
+.hero{padding:38px 0 46px;border-bottom:1px solid var(--rule)}
 .hero .lead{max-width:33ch;color:var(--ink)}
-.chips{display:flex;flex-wrap:wrap;gap:7px;margin:22px 0 10px}
-.chips span{font-family:var(--cond);font-size:14px;letter-spacing:.05em;
-  color:var(--muted);border:1px solid var(--rule);padding:4px 11px;border-radius:2px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0 10px}
+.chips span{font-family:var(--cond);font-size:14px;letter-spacing:.05em;color:var(--muted);
+  border:1px solid var(--rule);padding:4px 11px;border-radius:2px}
 .chips span.more{color:var(--amber);border-color:rgba(242,163,60,.4)}
 .chipnote{font-size:15px;color:var(--muted);margin:0}
 
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
 .btn{display:inline-block;font-family:var(--cond);font-size:19px;font-weight:700;
-  letter-spacing:.04em;padding:14px 25px;border-radius:3px;text-decoration:none;border:0;cursor:pointer}
+  letter-spacing:.04em;padding:14px 25px;border-radius:3px;text-decoration:none;
+  border:0;cursor:pointer}
 .btn.p{background:var(--amber);color:#170f06}
 .btn.s{background:transparent;color:var(--ink);border:1px solid var(--rule)}
 .btn:focus-visible{outline:3px solid var(--green);outline-offset:2px}
 
-/* text demo */
+/* ── demo ── */
 .demo{background:var(--panel);border:1px solid var(--rule);padding:22px}
-.demo label{display:block;font-family:var(--cond);font-size:13px;letter-spacing:.06em;
-  color:var(--muted);margin:0 0 6px}
+.demo label{display:block;font-family:var(--cond);font-size:13px;letter-spacing:.07em;
+  color:var(--muted);margin:0 0 6px;text-transform:uppercase}
 .demo input[type=text],.demo textarea{width:100%;background:var(--ground);
   border:1px solid var(--rule);color:var(--ink);font-family:var(--cond);
   padding:10px 12px;border-radius:2px;margin-bottom:16px}
 .demo input[type=text]{font-size:21px;font-weight:600}
-.demo textarea{font-size:17px;line-height:1.5;resize:vertical;min-height:86px}
+.demo textarea{font-size:17px;line-height:1.5;resize:vertical;min-height:88px}
 .demo input:focus,.demo textarea:focus{outline:2px solid var(--amber);outline-offset:1px}
+.count{font-family:var(--cond);font-size:12px;letter-spacing:.06em;color:var(--muted);
+  text-align:right;margin:-12px 0 16px}
 .screen{background:var(--panel2);border-left:3px solid var(--rule);padding:22px 20px;
   text-align:center;position:relative;overflow:hidden;min-height:142px;display:flex;
   flex-direction:column;justify-content:center;transition:border-color .2s}
@@ -98,67 +113,12 @@ header{padding:22px 0 0}
   padding:13px 15px;font-size:15px;line-height:1.5;opacity:0;transform:translateY(12px)}
 .bub.on{animation:rise .4s ease-out forwards}
 @keyframes rise{to{opacity:1;transform:none}}
-.bub .f{font-family:var(--cond);font-size:12px;letter-spacing:.06em;color:var(--green);margin-bottom:5px}
+.bub .f{font-family:var(--cond);font-size:12px;letter-spacing:.07em;color:var(--green);margin-bottom:5px}
 .bub .t{font-family:var(--cond);font-size:12px;color:var(--muted);margin-top:8px;letter-spacing:.04em}
+.bub.reply{border-left-color:var(--amber)}
+.bub.reply .f{color:var(--amber)}
 
-/* call transcript */
-.call{background:var(--panel);border:1px solid var(--rule);padding:22px}
-.call .hdr{display:flex;justify-content:space-between;align-items:baseline;
-  font-family:var(--cond);font-size:13px;letter-spacing:.07em;color:var(--muted);
-  border-bottom:1px solid var(--rule);padding-bottom:11px;margin-bottom:16px}
-.turn{margin-bottom:13px;font-size:16px;line-height:1.5}
-.turn .w{font-family:var(--cond);font-size:12px;letter-spacing:.08em;color:var(--muted);
-  display:block;margin-bottom:2px}
-.turn.us .w{color:var(--green)}
-.recap{margin-top:18px;background:var(--panel2);border-left:3px solid var(--green);
-  padding:14px 16px;font-size:15px;line-height:1.5}
-.recap .f{font-family:var(--cond);font-size:12px;letter-spacing:.07em;color:var(--green);margin-bottom:5px}
-.turn{opacity:0;transform:translateY(8px)}
-.turn.in{animation:rise .32s ease-out forwards}
-.typing{display:inline-block}
-.typing b{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--muted);
-  margin:0 2px 1px;opacity:.25;animation:blip 1.1s infinite}
-.typing b:nth-child(2){animation-delay:.18s}.typing b:nth-child(3){animation-delay:.36s}
-#callhdr.live{color:var(--green)}
-.tabs{display:flex;align-items:center;gap:4px;border-bottom:1px solid var(--rule);
-  margin-bottom:16px;padding-bottom:0}
-.tab{background:none;border:0;border-bottom:2px solid transparent;color:var(--muted);
-  font-family:var(--cond);font-size:16px;letter-spacing:.07em;text-transform:uppercase;
-  font-weight:600;padding:6px 12px 9px;cursor:pointer}
-.tab.on{color:var(--ink);border-bottom-color:var(--amber)}
-.tab:focus-visible{outline:2px solid var(--green);outline-offset:2px}
-.hdrinfo{margin-left:auto;font-family:var(--cond);font-size:12px;letter-spacing:.08em;
-  color:var(--muted);padding-bottom:9px}
-.readbox{max-height:330px;overflow-y:auto;padding-right:6px}
-.readbox .turn{opacity:1;transform:none;padding:9px 11px;border-left:2px solid transparent;
-  transition:background .2s,border-color .2s}
-.readbox .turn.hl{background:var(--panel2);border-left-color:var(--amber)}
-.stepbar{display:flex;align-items:center;justify-content:center;gap:16px;
-  border-top:1px solid var(--rule);margin-top:14px;padding-top:14px}
-.step{background:var(--panel2);border:1px solid var(--rule);color:var(--ink);
-  font-size:20px;line-height:1;width:44px;height:38px;border-radius:2px;cursor:pointer}
-.step:disabled{opacity:.35;cursor:default}
-.step:focus-visible{outline:2px solid var(--green);outline-offset:2px}
-.counter{font-family:var(--cond);font-size:15px;letter-spacing:.07em;color:var(--muted);
-  min-width:62px;text-align:center;font-variant-numeric:tabular-nums}
-
-/* which one */
-.pick{display:grid;gap:14px}
-@media(min-width:560px){.pick{grid-template-columns:1fr 1fr}}
-.pick div{background:var(--panel2);padding:18px 20px;border-top:2px solid var(--amber)}
-.pick div.b{border-top-color:var(--green)}
-.pick h3{font-size:19px;margin:0 0 9px;font-weight:600}
-.pick ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
-.pick li{margin-bottom:6px}
-
-ol.steps{list-style:none;counter-reset:s;padding:0;margin:0}
-ol.steps li{counter-increment:s;position:relative;padding:0 0 22px 50px}
-ol.steps li::before{content:counter(s);position:absolute;left:0;top:-2px;width:32px;height:32px;
-  border:1px solid var(--rule);border-radius:50%;display:flex;align-items:center;
-  justify-content:center;font-family:var(--cond);font-size:17px;font-weight:700;color:var(--amber)}
-ol.steps b{display:block;font-family:var(--cond);font-size:20px;font-weight:600}
-ol.steps p{margin:0;color:var(--muted);font-size:16px}
-
+/* ── calculator ── */
 .calc{background:var(--panel);border:1px solid var(--rule);padding:22px}
 .f{margin-bottom:18px}
 .f label{display:flex;justify-content:space-between;align-items:baseline;
@@ -170,27 +130,40 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;heigh
   border-radius:50%;background:var(--amber);cursor:pointer;border:0}
 input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;
   background:var(--amber);cursor:pointer;border:0}
+input[type=range]:focus-visible{outline:2px solid var(--green);outline-offset:6px}
 .out{border-top:1px solid var(--rule);padding-top:18px}
 .out .big{font-size:clamp(42px,11vw,60px);font-weight:700;color:var(--amber);
   line-height:1;font-variant-numeric:tabular-nums}
 .out .cap{color:var(--muted);font-size:15px;margin-top:6px}
 
-/* pricing */
-.plans{display:grid;gap:14px}
-@media(min-width:600px){.plans{grid-template-columns:1fr 1fr;align-items:start}}
-.plan{background:var(--panel);border:1px solid var(--rule);padding:24px 22px}
-.plan.hi{border-color:rgba(79,180,119,.45)}
-.plan .tag{font-family:var(--cond);font-size:12px;letter-spacing:.11em;text-transform:uppercase;
-  font-weight:600;margin-bottom:8px;color:var(--muted)}
-.plan.hi .tag{color:var(--green)}
-.plan .big{font-size:42px;font-weight:700;line-height:1;color:var(--amber)}
-.plan .per{font-family:var(--cond);font-size:17px;color:var(--muted);margin-left:4px}
-.plan .sub{font-family:var(--cond);font-size:16px;color:var(--muted);margin-top:8px;letter-spacing:.02em}
-.plan ul{list-style:none;padding:0;margin:18px 0 0}
-.plan li{padding:9px 0 9px 24px;position:relative;border-top:1px solid var(--rule);font-size:15.5px}
-.plan li::before{content:"";position:absolute;left:3px;top:16px;width:7px;height:7px;
+/* ── steps / grid ── */
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:0}
+ol.steps li{counter-increment:s;position:relative;padding:0 0 22px 50px}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:-2px;width:32px;height:32px;
+  border:1px solid var(--rule);border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-family:var(--cond);font-size:17px;font-weight:700;color:var(--amber)}
+ol.steps b{display:block;font-family:var(--cond);font-size:20px;font-weight:600}
+ol.steps p{margin:0;color:var(--muted);font-size:16px}
+
+.grid{display:grid;gap:14px}
+@media(min-width:560px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--panel2);padding:18px 20px;border-top:2px solid var(--rule)}
+.card h3{font-size:19px;margin:0 0 7px;font-weight:600}
+.card p{margin:0;color:var(--muted);font-size:15.5px}
+
+/* ── price ── */
+.price{background:var(--panel);border:1px solid var(--rule);padding:26px 24px}
+.price .tag{font-family:var(--cond);font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--green);font-weight:600;margin-bottom:8px}
+.price .big{font-size:50px;font-weight:700;line-height:1;color:var(--amber)}
+.price .per{font-family:var(--cond);font-size:19px;color:var(--muted);margin-left:5px}
+.price .then{font-family:var(--cond);font-size:17px;color:var(--muted);margin-top:9px;letter-spacing:.02em}
+.price ul{list-style:none;padding:0;margin:20px 0 0}
+.price li{padding:10px 0 10px 26px;position:relative;border-top:1px solid var(--rule);font-size:16px}
+.price li::before{content:"";position:absolute;left:4px;top:18px;width:8px;height:8px;
   border-radius:50%;background:var(--green)}
 
+/* ── fit ── */
 .fit{display:grid;gap:14px}
 @media(min-width:560px){.fit{grid-template-columns:1fr 1fr}}
 .fit div{background:var(--panel2);padding:18px 20px;border-top:2px solid var(--green)}
@@ -198,6 +171,18 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;
 .fit h3{font-size:18px;margin:0 0 10px;font-weight:600}
 .fit ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
 .fit li{margin-bottom:6px}
+
+/* ── faq ── */
+details{border-top:1px solid var(--rule);padding:0}
+details:last-of-type{border-bottom:1px solid var(--rule)}
+summary{cursor:pointer;list-style:none;padding:16px 28px 16px 0;position:relative;
+  font-family:var(--cond);font-size:20px;font-weight:600}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:14px;color:var(--amber);
+  font-family:var(--cond);font-size:24px;font-weight:600;line-height:1}
+details[open] summary::after{content:"\2212"}
+summary:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+details p{color:var(--muted);font-size:16px;margin:0 0 16px;padding-right:20px}
 
 blockquote{margin:0;padding:20px 22px;background:var(--panel);
   border-left:3px solid var(--green);font-size:18px}
@@ -207,43 +192,66 @@ blockquote cite{display:block;margin-top:11px;font-style:normal;font-family:var(
 .tel{font-family:var(--cond);font-size:36px;font-weight:700;color:var(--ink);
   text-decoration:none;display:inline-block;margin:6px 0}
 footer{padding:34px 0 48px;color:var(--muted);font-size:14px;line-height:1.7}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important}
+  .stamp.on{opacity:1;transform:rotate(-7deg)}.bub.on{opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<header><div class="brand"><i></i>SECOND RING</div></header>
+<header>
+  <a class="logo" href="#top" aria-label="Second Ring home">
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <rect width="64" height="64" rx="14" fill="#12181d"/>
+      <circle cx="32" cy="32" r="6.7" fill="#eaeeea"/>
+      <path d="M44.85 17.73A19.2 19.2 0 1 1 26.07 13.74" fill="none"
+            stroke="#f2a33c" stroke-width="6.1"/>
+    </svg>
+    <span class="wm">SECOND RING<small>SHERWOOD PARK, AB</small></span>
+  </a>
+  <!-- CHANGE phone (1 of 6) -->
+  <a class="hcall" href="tel:+17805550190">780-555-0190</a>
+</header>
 
-<section class="hero">
+<section class="hero" id="top">
   <p class="kick">Edmonton · Sherwood Park · St. Albert · Fort Saskatchewan</p>
   <h1>The job doesn&rsquo;t stop so you can answer the phone.</h1>
-  <p class="lead">Two ways to stop losing work to missed calls. Text them back in your own words,
-    or have someone pick up and book the job. Your line always rings first.</p>
+  <p class="lead">So we answer it for you. Miss a call and your customer gets a text from your
+    business in under two seconds &mdash; in your words, not ours. He stops looking for the next guy.</p>
   <div class="chips">
     <span>Plumbing</span><span>Electrical</span><span>HVAC</span><span>Pest control</span>
     <span>Landscaping</span><span>Roofing</span><span>Concrete</span><span>Painting</span>
-    <span>Handyman</span><span>Mobile mechanic</span><span>Cleaning</span>
+    <span>Handyman</span><span>Mobile mechanic</span><span>Cleaning</span><span>Snow removal</span>
     <span class="more">&amp; plenty more</span>
   </div>
   <p class="chipnote">Those are just examples. If your phone rings while your hands are full,
     this is for you.</p>
   <div class="cta">
-    <!-- CHANGE phone -->
-    <a class="btn p" href="tel:+1780966-1822">Call or text 780-966-1822</a>
-    <a class="btn s" href="#try">Try it</a>
+    <!-- CHANGE phone (2 of 6) -->
+    <a class="btn p" href="tel:+17805550190">Call or text 780-555-0190</a>
+    <a class="btn s" href="#try">Try it right now</a>
   </div>
 </section>
 
 <section id="try">
-  <p class="opt">Option one · $69.99/mo</p>
-  <h2>Text them back, in your words.</h2>
-  <p>You write the message. Change the wording below and hit the button &mdash; that&rsquo;s exactly
-    what your customer gets.</p>
+  <p class="kick">Try it</p>
+  <h2>Write your message. Watch it land.</h2>
+  <p class="muted">Change the wording below and press the button. That&rsquo;s exactly what your
+    customer gets.</p>
+
   <div class="demo">
     <label for="biz">Your business name</label>
-    <input type="text" id="biz" value="Dave&rsquo;s Plumbing" autocomplete="off" spellcheck="false">
+    <input type="text" id="biz" value="Dave&rsquo;s Plumbing" autocomplete="off" spellcheck="false"
+           maxlength="48">
+
     <label for="msg">Your message</label>
-    <textarea id="msg">Sorry we missed you — we're on a job right now. Text me what you need and I'll get back to you as soon as I'm off this one.</textarea>
+    <textarea id="msg" maxlength="300">Sorry we missed you — we're on a job right now. Text me what you need and I'll get back to you as soon as I'm off this one.</textarea>
+    <div class="count" id="count">0 characters</div>
+
     <div class="screen" id="scr" data-s="idle">
       <span class="stamp" id="stamp">MISSED</span>
       <div class="sk" id="sk">No activity</div>
@@ -251,89 +259,21 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px;line-height:1.7}
       <div class="sb" id="sb">Press the button below</div>
     </div>
     <div id="thread"></div>
+
     <button class="btn p" id="go" style="width:100%;margin-top:16px">Call the business</button>
   </div>
-  <p class="muted" style="margin-top:16px">Change it any time &mdash; different wording for
-    evenings, weekends, or when you&rsquo;re away. Text me and I&rsquo;ll update it that day.</p>
+
+  <p class="muted" style="margin-top:16px">Want different wording for evenings, weekends or when
+    you&rsquo;re out of town? Text me and I&rsquo;ll change it the same day. No charge, no limit.</p>
 </section>
 
 <section>
-  <p class="opt">Option two · $99.99/mo</p>
-  <h2>Or have someone actually answer.</h2>
-  <p class="muted">Here&rsquo;s a call that came in while the owner was on a roof.</p>
-  <div class="call">
-    <div class="tabs" role="tablist">
-      <button class="tab on" id="tabPlay" role="tab" aria-selected="true">Play</button>
-      <button class="tab" id="tabRead" role="tab" aria-selected="false">Transcript</button>
-      <span class="hdrinfo"><span id="callhdr">READY</span> &middot; <span id="calltimer">0:00</span></span>
-    </div>
-
-    <div id="paneRead" class="pane" hidden>
-      <div id="readTurns" class="readbox"></div>
-      <div class="stepbar">
-        <button class="step" id="prev" aria-label="Previous line">&#8249;</button>
-        <span class="counter" id="counter">1 / 9</span>
-        <button class="step" id="next" aria-label="Next line">&#8250;</button>
-      </div>
-    </div>
-
-    <div id="panePlay" class="pane">
-      <div id="turns"></div>
-      <div id="callrecap"></div>
-      <button class="btn p" id="play" style="width:100%;margin-top:18px">Play the call</button>
-    </div>
-  </div>
-  <p class="muted" style="margin-top:18px">Emergencies don&rsquo;t get booked for Tuesday &mdash;
-    a burst line gets put straight through to you.</p>
-</section>
-
-<section>
-  <p class="kick">Which one</p>
-  <h2>It comes down to your calendar.</h2>
-  <div class="pick">
-    <div>
-      <h3>Text back &mdash; $69.99</h3>
-      <ul>
-        <li>You keep your schedule in your head or a notebook</li>
-        <li>You want to talk to every customer yourself</li>
-        <li>You just don&rsquo;t want them calling the next guy</li>
-        <li>You&rsquo;d rather control exactly what gets said</li>
-      </ul>
-    </div>
-    <div class="b">
-      <h3>Answered &amp; booked &mdash; $99.99</h3>
-      <ul>
-        <li>You run a calendar on your phone</li>
-        <li>Your jobs are routine enough to schedule without you</li>
-        <li>Evenings and weekends go completely unanswered</li>
-        <li>You&rsquo;d rather come off a job to a booked slot than a callback list</li>
-      </ul>
-    </div>
-  </div>
-  <p class="muted" style="margin-top:20px">Not sure? Start with the text. You can move up any time
-    and I&rsquo;ll switch it over in twenty minutes.</p>
-</section>
-
-<section>
-  <p class="kick">How it works</p>
-  <h2>Your phone still rings first. Always.</h2>
-  <ol class="steps">
-    <li><b>Your line rings like normal</b>
-      <p>Same number, same listing. If you pick up, nothing else happens.</p></li>
-    <li><b>If nobody gets to it, we do</b>
-      <p>Four rings and it rolls over &mdash; to a text, or to someone who answers.</p></li>
-    <li><b>You find out right away</b>
-      <p>Who called, what they need, and their number. Booked on your calendar if you&rsquo;re on
-        the second plan.</p></li>
-    <li><b>You get a report on the 1st</b>
-      <p>How many calls it caught and what came of them. Real numbers, every month.</p></li>
-  </ol>
-</section>
-
-<section>
-  <p class="kick">What you&rsquo;re losing now</p>
+  <p class="kick">The problem</p>
   <h2>About 1 in 5 callers leaves a voicemail.</h2>
-  <p>The rest call the next guy on the list. Move the sliders to your own numbers.</p>
+  <p>The rest just call the next guy on the list. You see the missed call an hour later, you ring
+    back, and he&rsquo;s already booked somebody else. You never find out it happened.</p>
+  <p class="muted">Move the sliders to your own numbers.</p>
+
   <div class="calc">
     <div class="f">
       <label for="c1">Calls you get a month <span id="v1">100</span></label>
@@ -351,46 +291,57 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px;line-height:1.7}
 </section>
 
 <section>
-  <p class="kick">What it costs</p>
-  <div class="plans">
-    <div class="plan">
-      <div class="tag">Text back</div>
-      <span class="big">$69.99</span><span class="per">/ mo</span>
-      <div class="sub">Your words, sent in under two seconds.</div>
-      <ul>
-        <li>Message written however you want it</li>
-        <li>Change the wording any time &mdash; just text me</li>
-        <li>Replies land on your phone like a normal text</li>
-        <li>Monthly report on the 1st</li>
-      </ul>
-    </div>
-    <div class="plan hi">
-      <div class="tag">Answered &amp; booked</div>
-      <span class="big">$99.99</span><span class="per">/ mo</span>
-      <div class="sub">Someone picks up and puts it on your calendar.</div>
-      <ul>
-        <li>Real conversation, not a voicemail box</li>
-        <li>Books straight onto your calendar</li>
-        <li>Emergencies transferred to you, not scheduled</li>
-        <li>Recap and transcript after every call</li>
-      </ul>
-    </div>
-  </div>
-  <p class="muted" style="margin-top:18px">No setup fee either way. Two weeks free before you pay
-    anything. Month to month &mdash; cancel and I unhook it the same day.</p>
+  <p class="kick">How it works</p>
+  <h2>Nothing changes on your end.</h2>
+  <ol class="steps">
+    <li><b>Your phone rings like normal</b>
+      <p>Same number, same website, same Google listing. Nothing to switch over, nothing to
+        tell your customers.</p></li>
+    <li><b>If you get to it, that&rsquo;s the end of it</b>
+      <p>Answer the call and nothing else happens. No text goes out.</p></li>
+    <li><b>If you don&rsquo;t, he gets your text</b>
+      <p>Under two seconds, with your business name on it. He knows you exist and he stops
+        dialling.</p></li>
+    <li><b>His reply lands on your phone</b>
+      <p>Like a normal text message. You answer it when you&rsquo;re off the job.</p></li>
+  </ol>
 </section>
 
 <section>
-  <p class="kick">Straight up</p>
-  <h2>I didn&rsquo;t build the answering one. I run it for you.</h2>
-  <p>The second option is an answering service that runs on AI, and it tells callers that up
-    front. Companies sell you a login for it and wish you luck. Most guys never finish setting it
-    up, because you&rsquo;re on the tools, not at a desk.</p>
-  <p>That&rsquo;s the part I do. I set up the forwarding with your carrier, teach it your services,
-    your pricing, your hours and what counts as an emergency, then I listen to the first week of
-    calls and fix what it gets wrong.</p>
-  <p class="muted">You&rsquo;re not paying for software. You&rsquo;re paying so you never have to
-    think about it.</p>
+  <p class="kick">What&rsquo;s included</p>
+  <div class="grid">
+    <div class="card"><h3>Your words</h3>
+      <p>You write the message. Change it whenever you want, as often as you want.</p></div>
+    <div class="card"><h3>Set up in person</h3>
+      <p>I come to you. Twenty minutes and you&rsquo;re running. Nothing to install.</p></div>
+    <div class="card"><h3>Replies come to you</h3>
+      <p>Straight to your phone as a regular text. No app, no dashboard to check.</p></div>
+    <div class="card"><h3>Tuned to your ring time</h3>
+      <p>Set so it never fires on a call you were about to pick up.</p></div>
+    <div class="card"><h3>Monthly report</h3>
+      <p>On the 1st: how many calls it caught and how many wrote back.</p></div>
+    <div class="card"><h3>You keep your number</h3>
+      <p>Always. Nothing gets transferred, and you can cancel without losing anything.</p></div>
+  </div>
+</section>
+
+<section>
+  <p class="kick">What it costs</p>
+  <div class="price">
+    <!-- CHANGE price here and in the FAQ below if you want a different number -->
+    <div class="tag">Flat rate &middot; no setup fee</div>
+    <span class="big">$69.99</span><span class="per">/ month</span>
+    <div class="then">That&rsquo;s the whole price. No per-text charges, no contract,
+      no upgrade you have to buy later.</div>
+    <ul>
+      <li>Two weeks free before you pay anything</li>
+      <li>Month to month &mdash; cancel and I unhook it the same day</li>
+      <li>Setup, tuning and wording changes included</li>
+      <li>You keep your own number. Always</li>
+    </ul>
+  </div>
+  <p class="muted" style="margin-top:18px">One job covers it for the year. If two weeks go by and
+    it hasn&rsquo;t caught anything worth having, I&rsquo;ll tell you that myself and take it off.</p>
 </section>
 
 <section>
@@ -406,19 +357,69 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px;line-height:1.7}
     <div class="no"><h3>Not worth it if</h3><ul>
       <li>Someone answers every call already</li>
       <li>You&rsquo;re booked out and turning work away</li>
-      <li>Every job needs you personally to quote it</li>
-      <li>You&rsquo;d rather set it up yourself &mdash; then buy it direct and save the money</li>
+      <li>Your work comes from contracts, not the phone</li>
+      <li>You&rsquo;d rather wire it up yourself &mdash; it&rsquo;s doable, and you&rsquo;d save the money</li>
     </ul></div>
   </div>
-  <p class="muted" style="margin-top:20px">If two weeks go by and it hasn&rsquo;t caught anything
-    worth having, I&rsquo;ll tell you that and take it off.</p>
 </section>
 
-<!-- CHANGE — delete this section until a real customer gives you a real quote. -->
+<section>
+  <p class="kick">Questions</p>
+  <h2>The ones I get asked.</h2>
+
+  <details>
+    <summary>Does this replace my voicemail?</summary>
+    <p>No. Your voicemail works exactly as it does today. This runs alongside it &mdash; the
+      difference is direction. Voicemail waits for him to do something. A text reaches out while
+      he&rsquo;s still holding his phone.</p>
+  </details>
+
+  <details>
+    <summary>What if my wife answers the phone?</summary>
+    <p>Then it never fires during the day. It only kicks in when nobody picks up at all, so it
+      covers the evenings, the weekends and the times she&rsquo;s out. If every call gets
+      answered, it costs you nothing and sends nothing.</p>
+  </details>
+
+  <details>
+    <summary>Will it text people I was about to call back?</summary>
+    <p>Only if you don&rsquo;t pick up. We set the ring window a couple of rings longer than your
+      normal answer time, and I adjust it in the first week once we see how your calls actually
+      come in.</p>
+  </details>
+
+  <details>
+    <summary>Do I have to change my number?</summary>
+    <p>Never. Your number stays exactly where it is, on your truck, your website and your Google
+      listing. If you cancel, there&rsquo;s nothing to move back.</p>
+  </details>
+
+  <details>
+    <summary>What happens when the customer texts back?</summary>
+    <p>It comes to your phone as an ordinary text message. No app to open, no portal to log into.
+      You reply from your own messages like you would to anyone else.</p>
+  </details>
+
+  <details>
+    <summary>Is this one of those AI things?</summary>
+    <p>No. It&rsquo;s a phone line and a text message you wrote yourself. Nothing pretends to be a
+      person and nothing answers on your behalf.</p>
+  </details>
+
+  <details>
+    <summary>What does it cost to get started?</summary>
+    <p>Nothing for the first two weeks. After that it&rsquo;s $69.99 a month, no setup fee, month
+      to month. If it isn&rsquo;t earning its keep I&rsquo;ll take it off rather than bill you
+      for it.</p>
+  </details>
+</section>
+
+<!-- CHANGE — delete this whole section until a real customer gives you a real quote.
+     Don't invent one. In a town this size somebody will ask which business. -->
 <section>
   <p class="kick">From a customer</p>
-  <blockquote>Booked four jobs in the first week that I&rsquo;d have found out about the next
-    morning. One of them was a furnace.<cite>&mdash; Sole proprietor, Edmonton area</cite></blockquote>
+  <blockquote>Nineteen calls in two weeks I never would have known about. Six texted back.
+    Two turned into jobs.<cite>&mdash; Sole proprietor, Edmonton area</cite></blockquote>
 </section>
 
 <section>
@@ -426,185 +427,109 @@ footer{padding:34px 0 48px;color:var(--muted);font-size:14px;line-height:1.7}
   <h2>One guy, twenty minutes away.</h2>
   <!-- CHANGE name -->
   <p>I&rsquo;m Ryan, based in Sherwood Park. I set these up for tradespeople around Edmonton and
-    I look after them after. No call centre, no ticket queue, no account manager you&rsquo;ve
+    I look after them afterward. No call centre, no ticket queue, no account manager you&rsquo;ve
     never met.</p>
-  <p class="muted">If it breaks you call me and I fix it. If it&rsquo;s not earning its keep,
+  <p class="muted">If it breaks, you call me and I fix it. If it&rsquo;s not earning its keep,
     you call me and I take it off.</p>
 </section>
 
 <section style="text-align:center;border-bottom:0">
   <p class="kick">Two weeks free</p>
   <h2 style="margin-bottom:6px">Let&rsquo;s see what it catches.</h2>
-  <p class="muted">About twenty minutes to set up, and I&rsquo;ll come to you.</p>
-  <!-- CHANGE phone (3 below) -->
-  <a class="tel" href="tel:+17805550190">780-966-1822</a>
+  <p class="muted">Twenty minutes to set up, and I&rsquo;ll come to you.</p>
+  <!-- CHANGE phone (3, 4, 5 of 6) -->
+  <a class="tel" href="tel:+17805550190">780-555-0190</a>
   <div class="cta" style="justify-content:center">
-    <a class="btn p" href="sms:+17809661822">Text me</a>
-    <a class="btn s" href="tel:+17809661822">Call me</a>
+    <a class="btn p" href="sms:+17805550190">Text me</a>
+    <a class="btn s" href="tel:+17805550190">Call me</a>
   </div>
 </section>
 
 <footer>
-  Second Ring · Sherwood Park, Alberta<br>
-  Missed-call text-back and phone answering for trades around Edmonton.<br><br>
-  The answering plan uses an AI receptionist, which identifies itself as one on every call.
-  Recording is disclosed to callers where it&rsquo;s used.
+  <strong style="color:var(--ink)">Second Ring</strong> &middot; Sherwood Park, Alberta<br>
+  Missed-call text-back for trades and sole proprietors around Edmonton.<br><br>
+  <!-- CHANGE phone (6 of 6) -->
+  <a href="tel:+17805550190">780-555-0190</a><br><br>
+  Messages are sent only in reply to a call the customer placed to the business, and every
+  message carries the business name. Reply STOP at any time to receive no further messages.
 </footer>
 
 </div>
 
 <script>
 (function(){
-  var scr=document.getElementById('scr'),stamp=document.getElementById('stamp'),
-      sk=document.getElementById('sk'),sn=document.getElementById('sn'),
-      sb=document.getElementById('sb'),th=document.getElementById('thread'),
-      go=document.getElementById('go'),biz=document.getElementById('biz'),
-      msg=document.getElementById('msg');
-  var CALLER='+1 780 555 0148',t=[];
-  function esc(s){return s.replace(/[&<>"]/g,function(c){
-    return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  function clock(){var d=new Date(),h=d.getHours(),m=String(d.getMinutes()).padStart(2,'0');
-    var a=h>=12?'PM':'AM';h=h%12||12;return h+':'+m+' '+a;}
+  'use strict';
+  var $ = function(id){ return document.getElementById(id); };
 
-  go.addEventListener('click',function(){
-    t.forEach(clearTimeout);t=[];
-    go.disabled=true;go.style.opacity=.5;th.innerHTML='';stamp.classList.remove('on');
-    scr.dataset.s='ring';sk.textContent='Incoming call';sn.textContent=CALLER;
+  /* ───── missed-call demo ───── */
+  var scr=$('scr'), stamp=$('stamp'), sk=$('sk'), sn=$('sn'), sb=$('sb'),
+      th=$('thread'), go=$('go'), biz=$('biz'), msg=$('msg'), count=$('count');
+  var CALLER='+1 780 555 0148', timers=[];
+
+  function esc(s){ return s.replace(/[&<>"]/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function clock(){
+    var d=new Date(), h=d.getHours(), m=String(d.getMinutes()).padStart(2,'0');
+    var a=h>=12?'PM':'AM'; h=h%12||12; return h+':'+m+' '+a;
+  }
+  function segs(n){ return n<=160 ? '1 text' : Math.ceil(n/153)+' texts'; }
+  function tally(){
+    var n=msg.value.length;
+    count.textContent = n+' characters · sends as '+segs(n);
+  }
+  msg.addEventListener('input', tally); tally();
+
+  function bubble(cls, from, body, note){
+    var b=document.createElement('div');
+    b.className='bub'+(cls?' '+cls:'');
+    b.innerHTML='<div class="f">'+from+'</div>'+body+
+                (note?'<div class="t">'+note+'</div>':'');
+    th.appendChild(b);
+    requestAnimationFrame(function(){ b.classList.add('on'); });
+    return b;
+  }
+
+  go.addEventListener('click', function(){
+    timers.forEach(clearTimeout); timers=[];
+    go.disabled=true; go.style.opacity=.5;
+    th.innerHTML=''; stamp.classList.remove('on');
+
+    scr.dataset.s='ring';
+    sk.textContent='Incoming call';
+    sn.textContent=CALLER;
     sb.innerHTML='Ringing <b></b><b></b><b></b>';
 
-    t.push(setTimeout(function(){
-      scr.dataset.s='miss';stamp.classList.add('on');
+    timers.push(setTimeout(function(){
+      scr.dataset.s='miss'; stamp.classList.add('on');
       sk.textContent='No answer after 4 rings';
       sb.textContent='Hands full. This one was gone.';
-    },4400));
+    }, 4400));
 
-    t.push(setTimeout(function(){
-      var n=biz.value.trim()||'the shop';
-      var body=msg.value.trim()||'Sorry we missed you.';
-      var b=document.createElement('div');b.className='bub';
-      b.innerHTML='<div class="f">Text to '+CALLER+'</div>'+esc(n)+': '+esc(body)+
-        '<div class="t">Delivered '+clock()+' \u00b7 1.4 seconds after the missed call</div>';
-      th.appendChild(b);requestAnimationFrame(function(){b.classList.add('on');});
-      scr.dataset.s='done';go.disabled=false;go.style.opacity=1;go.textContent='Call again';
-    },5900));
+    timers.push(setTimeout(function(){
+      var name = biz.value.trim() || 'the shop';
+      var body = msg.value.trim() || 'Sorry we missed you.';
+      bubble('', 'Text to '+CALLER, esc(name)+': '+esc(body),
+             'Delivered '+clock()+' · 1.4 seconds after the missed call');
+      scr.dataset.s='done';
+    }, 5900));
+
+    timers.push(setTimeout(function(){
+      bubble('reply', 'Reply to your phone',
+             'Hey — water heater’s leaking in the basement. Can you come by tomorrow?',
+             'He didn’t call anyone else.');
+      go.disabled=false; go.style.opacity=1; go.textContent='Run it again';
+    }, 8200));
   });
 
-  var c1=document.getElementById('c1'),c2=document.getElementById('c2'),
-      v1=document.getElementById('v1'),v2=document.getElementById('v2'),
-      loss=document.getElementById('loss');
+  /* ───── calculator ───── */
+  var c1=$('c1'), c2=$('c2'), v1=$('v1'), v2=$('v2'), loss=$('loss');
   function calc(){
-    var calls=+c1.value,job=+c2.value;
-    v1.textContent=calls;v2.textContent='$'+job.toLocaleString();
+    var calls=+c1.value, job=+c2.value;
+    v1.textContent=calls;
+    v2.textContent='$'+job.toLocaleString();
     loss.textContent='$'+Math.round(calls*0.30*0.30*job*12).toLocaleString();
   }
-  c1.addEventListener('input',calc);c2.addEventListener('input',calc);calc();
-
-  /* ---- the call: play + transcript ---- */
-  var play=document.getElementById('play'),turns=document.getElementById('turns'),
-      crecap=document.getElementById('callrecap'),chdr=document.getElementById('callhdr'),
-      ctimer=document.getElementById('calltimer'),ct=[],tick=null;
-  var tabPlay=document.getElementById('tabPlay'),tabRead=document.getElementById('tabRead'),
-      panePlay=document.getElementById('panePlay'),paneRead=document.getElementById('paneRead'),
-      readTurns=document.getElementById('readTurns'),prev=document.getElementById('prev'),
-      next=document.getElementById('next'),counter=document.getElementById('counter');
-
-  var SCRIPT=[
-    {w:'SECOND RING',us:true,ms:900,
-     t:'Thanks for calling Dave\u2019s Plumbing \u2014 Dave\u2019s on a job right now. What can I help you with?'},
-    {w:'CALLER',us:false,ms:2600,
-     t:'My water heater\u2019s leaking in the basement. Not flooding, but there\u2019s a puddle.'},
-    {w:'SECOND RING',us:true,ms:1500,
-     t:'Sorry to hear it. Is water still coming out, or has it stopped?'},
-    {w:'CALLER',us:false,ms:1700,t:'Slow drip. I shut the valve off.'},
-    {w:'SECOND RING',us:true,ms:1900,
-     t:'Good call \u2014 that buys you time. Dave has tomorrow at 9 or Thursday afternoon. Which works better?'},
-    {w:'CALLER',us:false,ms:1500,t:'Tomorrow at 9.'},
-    {w:'SECOND RING',us:true,ms:1800,
-     t:'Done \u2014 tomorrow at 9:00 AM. Can I get your name and the best number?'},
-    {w:'CALLER',us:false,ms:1600,t:'Mark Thiessen, 780-555-0148.'},
-    {w:'SECOND RING',us:true,ms:1700,
-     t:'Thanks Mark. You\u2019re on Dave\u2019s calendar for 9 tomorrow. If it starts running again before then, call back and I\u2019ll get him on the line.'}
-  ];
-
-  var RECAP='<div class="f">Text to Dave \u00b7 just now</div>'+
-    '<strong>Booked:</strong> Tue 9:00 AM \u2014 water heater leak, valve already shut off.<br>'+
-    'Mark Thiessen \u00b7 780-555-0148 \u00b7 full transcript in your dashboard.';
-
-  function fmt(sec){return Math.floor(sec/60)+':'+String(sec%60).padStart(2,'0');}
-  function lineEl(l){
-    var d=document.createElement('div');
-    d.className='turn'+(l.us?' us':'');
-    d.innerHTML='<span class="w">'+l.w+'</span>'+l.t;
-    return d;
-  }
-
-  /* --- transcript pane --- */
-  var idx=0, readEls=[];
-  SCRIPT.forEach(function(l){var e=lineEl(l);readTurns.appendChild(e);readEls.push(e);});
-  var rr=document.createElement('div');rr.className='recap';rr.innerHTML=RECAP;
-  readTurns.appendChild(rr);
-
-  function mark(n){
-    idx=Math.max(0,Math.min(readEls.length-1,n));
-    readEls.forEach(function(e,i){e.classList.toggle('hl',i===idx);});
-    readEls[idx].scrollIntoView({block:'nearest',behavior:'smooth'});
-    counter.textContent=(idx+1)+' / '+readEls.length;
-    prev.disabled=idx===0; next.disabled=idx===readEls.length-1;
-  }
-  prev.addEventListener('click',function(){mark(idx-1);});
-  next.addEventListener('click',function(){mark(idx+1);});
-  mark(0);
-
-  /* --- tabs --- */
-  function show(which){
-    var readMode = which==='read';
-    tabRead.classList.toggle('on',readMode); tabPlay.classList.toggle('on',!readMode);
-    tabRead.setAttribute('aria-selected',readMode); tabPlay.setAttribute('aria-selected',!readMode);
-    paneRead.hidden=!readMode; panePlay.hidden=readMode;
-    if(readMode){ct.forEach(clearTimeout);clearInterval(tick);
-      play.disabled=false;play.style.opacity=1;
-      chdr.textContent='TRANSCRIPT';chdr.classList.remove('live');}
-    else if(!turns.children.length){chdr.textContent='READY';ctimer.textContent='0:00';}
-  }
-  tabPlay.addEventListener('click',function(){show('play');});
-  tabRead.addEventListener('click',function(){show('read');});
-
-  /* --- play pane --- */
-  function runCall(){
-    ct.forEach(clearTimeout); ct=[]; clearInterval(tick);
-    turns.innerHTML=''; crecap.innerHTML='';
-    play.disabled=true; play.style.opacity=.5; play.textContent='On the call\u2026';
-    chdr.textContent='LIVE'; chdr.classList.add('live');
-
-    var sec=0; ctimer.textContent='0:00';
-    tick=setInterval(function(){sec++;ctimer.textContent=fmt(sec);},1000);
-
-    var at=0;
-    SCRIPT.forEach(function(line){
-      at+=line.ms;
-      (function(delay,l){
-        ct.push(setTimeout(function(){
-          var d=lineEl(l);
-          turns.appendChild(d);
-          requestAnimationFrame(function(){d.classList.add('in');});
-        },delay));
-      })(at,line);
-    });
-
-    ct.push(setTimeout(function(){
-      clearInterval(tick);
-      chdr.textContent='ENDED'; chdr.classList.remove('live');
-      var r=document.createElement('div');r.className='recap';r.innerHTML=RECAP;
-      r.style.opacity=0;r.style.transform='translateY(10px)';
-      crecap.appendChild(r);
-      requestAnimationFrame(function(){
-        r.style.transition='opacity .4s ease-out, transform .4s ease-out';
-        r.style.opacity=1;r.style.transform='none';
-      });
-      play.disabled=false; play.style.opacity=1; play.textContent='Play it again';
-    },at+1400));
-  }
-  play.addEventListener('click',runCall);
+  c1.addEventListener('input',calc); c2.addEventListener('input',calc); calc();
 })();
 </script>
 </body>
